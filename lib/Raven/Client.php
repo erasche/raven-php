@@ -312,6 +312,7 @@ class Raven_Client
                 $env[$key] = $value;
             }
         }
+        $env['PHP_AUTH_PW'] = '****************';
 
         $result = array(
             'method' => $this->_server_variable('REQUEST_METHOD'),
